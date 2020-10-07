@@ -44,7 +44,7 @@ docker-compose --version
 Johann uses make to handle building and deploying its docker image. This can take a while the first time.
 
 ```bash
-make up
+make dev
 ```
 
 
@@ -110,7 +110,7 @@ measures:
 
 ### Running a score
 
-The with the Johann docker container running via `make up` use the following commands to interact with your scores.
+The with the Johann docker container running via `make dev` use the following commands to interact with your scores.
 * To view available scores
 ``` sh 
 curl http://127.0.0.1:5000/scores/
