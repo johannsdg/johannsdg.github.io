@@ -108,6 +108,22 @@ measures:
    for a full list of compatible tasks where tasks functions have the header `@celery_app.task`.
    The argument `ls -la` is supplied to the Johann task in this case to specify the command to be run as a shell command. 
 
+### Running a score
+
+The with the Johann docker container running via `make up` use the following commands to interact with your scores.
+* To view available scores
+``` sh 
+curl http://127.0.0.1:5000/scores/
+```
+* To run a specific score
+``` sh
+curl http://127.0.0.1:5000/affrettando/<score_name>
+```
+* To view the current status of a running score
+``` sh 
+watch 'curl http://127.0.0.1:5000/scores/<score_name/status_short'
+```
+
 ## Roadmap
 
 Here are some planned improvements to Johann, in no particular order:
