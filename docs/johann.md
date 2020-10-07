@@ -122,14 +122,13 @@ With the Johann docker container running via `make dev` users can interact with 
 <insert image>
 
 * In the given scorce entry one wants to run, select one of the following options:
-
-<insert image>
-
     * View: Displays the YAML and JSON representations of the Score file
     * Status: Displays the status of the current or last run depending on if a run in is progress
     * Launch: Runs the score file
     * Reset: Resets the run to allow for a new run to be launched and monitored with status
-    
+
+<insert image>
+
 * To run a Score select launch to be presented with the **Launch Scenario** screen. From this menu one can select the Players (in this case Docker Machine Targets) to run the Score file. 
 
 <insert image>
