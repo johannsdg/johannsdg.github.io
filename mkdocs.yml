@@ -2,5 +2,6 @@ site_name: Johann
 repo_url: https://github.com/johannsdg/johannsdg.github.io
 nav:
     - Home: index.md
-    - About: about.md
+    - Johann: johann.md
+    - Offline Documentation: offline_docs.md
 theme: readthedocs

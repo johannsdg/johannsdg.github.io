@@ -1,4 +1,4 @@
-# Welcome to JohannSDG
+# Welcome to Johann S.D.G.
 
 TBD
 
