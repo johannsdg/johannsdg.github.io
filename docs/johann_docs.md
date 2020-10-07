@@ -13,7 +13,7 @@ directories into the newly cloned repo.
 ### Installing
 
 Johann is designed to be used on Linux and run in docker containers. It has been tested
-on Ubuntu 18.04, and likely works on several other distributions as well.
+on Ubuntu 18.04 and macOS Catalina. It likely works on several other distributions as well.
 
 Johann requires the following to run:
 
