@@ -2,7 +2,7 @@
 
 ## MkDocs
 
-These documentation pages for Johann were created with [MkDocs] (https://www.mkdocs.org/).
+These documentation pages for Johann were created with [MkDocs](https://www.mkdocs.org/).
 As such, they can be cloned and taken with you in situations where you may not have internet access.
 Note: This requires python and the mkdocs python library to function.
 
