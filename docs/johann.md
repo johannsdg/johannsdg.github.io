@@ -121,7 +121,7 @@ With the Johann docker container running via `make dev` users can interact with 
 
 <insert image>
 
-* In the given scorce entry one wants to run, select one of the following options:
+* In the given Score entry one wants to run, select one of the following options:
     * View: Displays the YAML and JSON representations of the Score file
     * Status: Displays the status of the current or last run depending on if a run in is progress
     * Launch: Runs the score file
