@@ -59,7 +59,7 @@ In the future, these could be VMs or other hosts as well.
 
 * Score -> Scenario/script of Players performing measures in order
 * Player -> Machine/Docker container that runs measures
-* Measure -> Specific action / single unit of action in a score
+* Measure -> Specific action/single unit of action in a score
 
 
 ### Example Score
