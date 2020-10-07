@@ -28,4 +28,4 @@ mkdocs build
 mkdocs serve
 ```
 By default the webpage will be served at `http://http://127.0.0.1:8000/` for more information please see the mkdocs 
-[getting started guide](https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html) 
+[getting started guide](https://docs.readthedocs.io/en/stable/intro/getting-started-with-mkdocs.html).
