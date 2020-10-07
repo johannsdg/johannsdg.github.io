@@ -1,3 +1,6 @@
+
+
+
 # Johann
 
 ## Summary
@@ -62,7 +65,15 @@ Measure -> Specific action / single unit of action in a score
 
 
 ### Example Score
-``` yml
+The following is an example score where there are 2 players which are both docker
+targets. One has python 3.6 and the other has python 3.7 installed. They are identified
+as `blank_3.6_buster` and `blank_3.6_buster`. These names need to match the docker containers
+being used, but the names you pick for your docker containers can be arbitrary. In this case
+there is only one measure with one task, to run the `ls -la` command in the root directory
+of the container.
+
+
+``` ymal
 
 
 # Copyright (c) 2019-present, The Johann Authors. All Rights Reserved.
@@ -92,11 +103,11 @@ measures:
       - "ls -la /"
 
 ```
-
-**Inpositum ultimus per**. Lumina lacertis in flamma induruit [ab
-venias](http://et-femina.io/crediturmaximus.html), sororem cum
-[nova](http://lumina.org/iacuit-vultus.aspx). Fodiebant dumque Calydonia meruit
-coniunctis qui, non *est vir*, et ante, nec arma. Tuetur cerva cetera.
+* The name `ls_root` is the arbitrary name of the measure and can be used to identify it.
+* The players specify which players from prior specified players should perform this measure.
+* The task `johann.tasks_main.run_shell_command` specifies a specific compatible action from
+  the Johann tasks. See **INSERT LINK** for a full list of compatible tasks. The argument
+  `ls -la` is supplied to the Johann task in this case to specify the command to be run as a shell command. 
 
 ## Roadmap
 
