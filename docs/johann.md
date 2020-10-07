@@ -9,6 +9,7 @@ the music.
 
 ## Getting Started
 
+First clone the [Johann Repo](https://github.com/johannsdg/johann) and change directories into the newly cloned repo. 
 
 ### Installing
 Johann is designed to be used on Linux and run in a docker container. It has been tested on Ubuntu 18.04, and likely
