@@ -133,7 +133,8 @@ With the Johann docker container running via `make dev` users can interact with 
 
 * Press the **Launch Scenario** button to launch the score on the selected players. 
 
-* This will automatically take you to the status page for the score you just launched where you can watch the score perform. Note: Some scores, including the test score, may take a few minutes to initialize before running. 
+* This will automatically take you to the status page for the score you just launched where you can watch the score perform. 
+**Note**: Some scores, including the test score, may take a few minutes to initialize before running. 
 
 ![Johann_5](img/Johann_5.png)
 
