@@ -6,7 +6,7 @@ These documentation pages for Johann were created with [MkDocs] (https://www.mkd
 As such, they can be cloned and taken with you in situations where you may not have internet access.
 Note: This requires python and the mkdocs python library to function.
 
-To host the documenation loaclly:
+To host the documentation locally:
 
 * Clone the [johannsdg repo](https://github.com/johannsdg/johannsdg.github.io.git) and move to that directory
 ``` sh
