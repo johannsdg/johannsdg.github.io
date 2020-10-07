@@ -110,7 +110,12 @@ measures:
 
 ### Running a score
 
-The with the Johann docker container running via `make dev` use the following commands to interact with your scores.
+With the Johann docker container running via `make dev` users can interact with scores via either the command link or a web GUI. 
+
+#### GUI 
+TBD 
+
+#### Command Line 
 * To view available scores
 ``` sh 
 curl http://127.0.0.1:5000/scores/
