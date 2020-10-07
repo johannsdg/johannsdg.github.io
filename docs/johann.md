@@ -121,7 +121,7 @@ curl http://127.0.0.1:5000/affrettando/<score_name>
 ```
 * To view the current status of a running score
 ``` sh 
-watch 'curl http://127.0.0.1:5000/scores/<score_name/status_short'
+watch 'curl http://127.0.0.1:5000/scores/<score_name>/status_short'
 ```
 
 ## Roadmap
