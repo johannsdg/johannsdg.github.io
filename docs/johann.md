@@ -1,6 +1,3 @@
-
-
-
 # Johann
 
 ## Summary
@@ -54,14 +51,15 @@ make up
 
 Johann runs scenarios through score files. Similar to musical score, the file contains all
 of the instructions the players should perform and the order to perform them. Each task in the scenario
-is refered to as a measure, again similar to musical score, the score file links these measures together
+is referred to as a measure, again similar to musical score, the score file links these measures together
 to orchestrate the players in the full scenario. Each player is currently a separate docker container.
 In the future, these could be VMs or other hosts as well.
 
 ### Lexicon
-Score -> Scenario/script of Players performing measures in order
-Player -> Machine/Docker container that runs measures
-Measure -> Specific action / single unit of action in a score
+
+* Score -> Scenario/script of Players performing measures in order
+* Player -> Machine/Docker container that runs measures
+* Measure -> Specific action / single unit of action in a score
 
 
 ### Example Score
@@ -106,8 +104,9 @@ measures:
 * The name `ls_root` is the arbitrary name of the measure and can be used to identify it.
 * The players specify which players from prior specified players should perform this measure.
 * The task `johann.tasks_main.run_shell_command` specifies a specific compatible action from
-  the Johann tasks. See **INSERT LINK** for a full list of compatible tasks. The argument
-  `ls -la` is supplied to the Johann task in this case to specify the command to be run as a shell command. 
+  the Johann tasks. See [Johann's Task Code](https://github.com/johannsdg/johann/blob/master/johann/tasks_main.py)
+   for a full list of compatible tasks where tasks functions have the header `@celery_app.task`.
+   The argument `ls -la` is supplied to the Johann task in this case to specify the command to be run as a shell command. 
 
 ## Roadmap
 
