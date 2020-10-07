@@ -1,5 +1,4 @@
 site_name: Johann
-repo_url: https://github.com/johannsdg/johannsdg.github.io
 nav:
     - Home: index.md
     - Johann: johann.md
