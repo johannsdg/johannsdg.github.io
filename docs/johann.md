@@ -113,7 +113,34 @@ measures:
 With the Johann docker container running via `make dev` users can interact with scores via either the command link or a web GUI. 
 
 #### GUI 
-TBD 
+* Open a web browser and navigate to `http://127.0.0.1/`
+
+<insert image>
+
+* Click on the **Scenarios** tab to view available scores
+
+<insert image>
+
+* In the given scorce entry one wants to run, select one of the following options:
+
+<insert image>
+
+    * View: Displays the YAML and JSON representations of the Score file
+    * Status: Displays the status of the current or last run depending on if a run in is progress
+    * Launch: Runs the score file
+    * Reset: Resets the run to allow for a new run to be launched and monitored with status
+    
+* To run a Score select launch to be presented with the **Launch Scenario** screen. From this menu one can select the Players (in this case Docker Machine Targets) to run the Score file. 
+
+<insert image>
+
+* Press the **Launch Scenario** button to launch the score on the selected players. 
+
+<insert image>
+
+* This will automatically take you to the status page for the score you just launched where you can watch the score perform. Note: Some scores, including the test score, may take a few minutes to initialize before running. 
+
+<insert image>
 
 #### Command Line 
 * To view available scores
