@@ -1,10 +1,20 @@
 # johannsdg.github.io
 
-## Offline Documentation
-
 These documentation pages for Johann S. D. G. were created with [MkDocs](https://www.mkdocs.org/).
 As such, they can be cloned and taken with you in situations where you may not have internet access.
 Note: This requires python and the mkdocs python library to function.
+
+## Online Documentation
+
+To deploy updates to github pages: 
+
+* Run the following command in the root repo folder
+```
+mkdocs gh-deploy
+```
+
+
+## Offline Documentation
 
 To host the documentation locally:
 
