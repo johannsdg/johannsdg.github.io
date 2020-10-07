@@ -7,6 +7,7 @@ As such, they can be cloned and taken with you in situations where you may not h
 Note: This requires python and the mkdocs python library to function.
 
 To host the documenation loaclly:
+
 * Clone the [johannsdg repo](https://github.com/johannsdg/johannsdg.github.io.git) and move to that directory
 ``` sh
 git clone https://github.com/johannsdg/johannsdg.github.io.git
