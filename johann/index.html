@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Johann - Johann</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Johann";
+    var mkdocs_page_input_path = "johann.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Johann</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Johann</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting Started</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#installing">Installing</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#running">Running</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#usage">Usage</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#lexicon">Lexicon</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#example-score">Example Score</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#running-a-score">Running a Score</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#gui">GUI</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#command-line">Command Line</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#roadmap">Roadmap</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../offline_docs/">Offline Documentation</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Johann</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Johann</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/johannsdg/johannsdg.github.io/edit/master/docs/johann.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="johann">Johann</h1>
+<p>Johann is a lightweight and flexible “scenario orchestrator”. It makes it easy to
+coordinate the actions of groups of computers into cohesive, reconfigurable scenarios.
+It’s sort of like the conductor for an orchestra of computers, and <em>you</em> get to write
+the music.</p>
+<h2 id="getting-started">Getting Started</h2>
+<p>First use git to clone <a href="https://github.com/johannsdg/johann">Johann</a> and change
+directories into the newly cloned repo.</p>
+<h3 id="installing">Installing</h3>
+<p>Johann is designed to be used on Linux and run in docker containers. It has been tested
+on Ubuntu 18.04, and likely works on several other distributions as well.</p>
+<p>Johann requires the following to run:</p>
+<ul>
+<li><a href="https://docs.docker.com/engine/install/#server">Docker Engine</a></li>
+<li><a href="https://docs.docker.com/compose/install/">Docker Compose</a></li>
+<li>Make</li>
+</ul>
+<p>Here is an example of how to install these on Ubuntu/Debian:</p>
+<pre><code class="language-bash"># Install make
+sudo apt-get update
+sudo apt-get install build-essential
+
+# Install docker via convenience script (not for production environments)
+curl https://get.docker.com | sudo sh
+sudo usermod -aG docker $USER
+# log out and log back in
+docker run hello-world
+
+# Install docker-compose
+sudo curl -L &quot;https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)&quot; -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+</code></pre>
+<h3 id="running">Running</h3>
+<p>Johann uses make to handle building and deploying its docker image. This can take a
+while the first time.</p>
+<pre><code class="language-bash">make dev
+</code></pre>
+<h2 id="usage">Usage</h2>
+<p>Johann orchestrates scenarios through reconfigurable YAML files called "Scores". Similar
+to musical scores, these files describe the the actions that the "Players" must take to
+perform their part/role in the scenario. Each Player's part in the scenario consists of
+"Measures" -- specific tasks and timing that Players must perform. Again similar to
+musical scores, the score file weaves these Measures together to orchestrate the Players
+in the full scenario. Each Player is currently comprised of a group of Docker
+container(s). In the future, these could be VMs or physical machines as well.</p>
+<h3 id="lexicon">Lexicon</h3>
+<ul>
+<li>Score -&gt; Scenario/script describing the actions that Players must take and when</li>
+<li>Player -&gt; Group of Docker container(s) that play the same part/role in the scenario</li>
+<li>Host -&gt; An actual compute resource such as a Docker container, VM, or physical
+  machine.</li>
+<li>Measure -&gt; Maps a Task and its timing/configuration to Player(s) in a Score</li>
+<li>Task -&gt; Specific action taken by Player(s) as part of a Measure</li>
+</ul>
+<h3 id="example-score">Example Score</h3>
+<p>The following is an example Score consisting of one Player ("docker_targets") with two
+Hosts which are both Docker containers (<code>blank_3.6_buster</code> and <code>blank_3.7_buster</code>). Note
+that the specific Hosts need not be specified in the Score file, and can be provided (or
+changed) at runtime either via API or GUI. Both of these specific Hosts are stock Debian
+containers with Python installed -- versions 3.6 and 3.7, respectively Neither of these
+containers have Johann installed -- it will installed or updated ("pushed") at runtime
+to match the version of Johann installed on the machine running Docker. This example
+Score has just one Measure executed by one Player (2 Hosts), with a Task to run the
+<code>ls -la</code> command in the root directory of each Host/container.</p>
+<pre><code class="language-yaml"># Copyright (c) 2019-present, The Johann Authors. All Rights Reserved.
+# Use of this source code is governed by a BSD-3-clause license that can
+# be found in the LICENSE file. See the AUTHORS file for names of contributors.
+
+---
+name: test_johann_pushing
+category: testing
+description:
+  test Johann's push functionality to install the player software on a host that doesn't
+  have it already
+players:
+  docker_targets:
+    name: docker_targets
+    hosts:
+      - blank_3.6_buster
+      - blank_3.7_buster
+    image: None
+    scale: 2
+measures:
+  - name: ls_root
+    players: [docker_targets]
+    start_delay: 0
+    task: johann.tasks_main.run_shell_command
+    args:
+      - &quot;ls -la /&quot;
+</code></pre>
+<ul>
+<li>The name <code>ls_root</code> is the arbitrary name of the Measure and is used as a key in the
+  API to interact with the Measure.</li>
+<li>The <code>players</code> key specifies which Players from the list defined above should perform
+  this particular Measure.</li>
+<li>The Task <code>johann.tasks_main.run_shell_command</code> specifies a specific compatible action
+  from the Johann tasks. See
+  <a href="https://github.com/johannsdg/johann/blob/master/johann/tasks_main.py">Johann's task code</a>
+  for a partial list of compatible Tasks.</li>
+<li>Tasks are Python functions with the decorator <code>@celery_app.task</code>.</li>
+<li>The argument <code>ls -la</code> is supplied to the Task in this case to specify the command to
+  be run as a shell command.</li>
+</ul>
+<h3 id="running-a-score">Running a Score</h3>
+<p>With the Johann Docker containers running via <code>make dev</code>, users can interact with Scores
+via either the command line or the web UI.</p>
+<h4 id="gui">GUI</h4>
+<ul>
+<li>Open a web browser and navigate to <code>http://127.0.0.1/</code></li>
+</ul>
+<p><img alt="Johann_1" src="../img/Johann_1.png" /></p>
+<ul>
+<li>
+<p>Click on the <strong>Scenarios</strong> tab to view the available Scores</p>
+</li>
+<li>
+<p>In the row containing the Score that you want to run, select one of the following
+  options:</p>
+</li>
+<li>View: Displays the YAML and JSON representations of the Score file</li>
+<li>Status: Displays the status of the current or last run depending on if a run in is
+    progress</li>
+<li>Launch: Runs the Score file</li>
+<li>Reset: Resets the run to allow for a new run to be launched and monitored with
+    status</li>
+</ul>
+<p><img alt="Johann_2" src="../img/Johann_2.png" /></p>
+<ul>
+<li>To run a Score select launch to be presented with the <strong>Launch Scenario</strong> screen.</li>
+<li>From this menu you can map available Hosts to the Players defined in the Score file.</li>
+<li>Hosts can be added either via API or a file that is run at startup.</li>
+</ul>
+<p><img alt="Johann_4" src="../img/Johann_4.png" /></p>
+<ul>
+<li>
+<p>Press the <strong>Launch Scenario</strong> button to launch the Score using the selected Hosts.</p>
+</li>
+<li>
+<p>This will automatically take you to the status page for the Score you just launched
+  where you can watch the Measures of the Score play. <strong>Note</strong>: Some Scores, including
+  the test score, may take a few minutes to initialize before running. This is where
+  Johann is installing or updating itself on the Hosts.</p>
+</li>
+</ul>
+<p><img alt="Johann_5" src="../img/Johann_5.png" /></p>
+<ul>
+<li>The status page also contains the raw output of the Tasks, in this case the <code>ls -la</code>
+  command run on each container shown below.</li>
+</ul>
+<p><img alt="Johann_6" src="../img/Johann_6.png" /></p>
+<h4 id="command-line">Command Line</h4>
+<ul>
+<li>To view available API endpoints</li>
+</ul>
+<pre><code class="language-sh">curl http://127.0.0.1:5000/
+</code></pre>
+<ul>
+<li>To view available scores</li>
+</ul>
+<pre><code class="language-sh">curl http://127.0.0.1:5000/scores/
+</code></pre>
+<ul>
+<li>To run a specific score</li>
+</ul>
+<pre><code class="language-sh">curl http://127.0.0.1:5000/affrettando/&lt;score_name&gt;
+</code></pre>
+<ul>
+<li>To view the current status of a running score</li>
+</ul>
+<pre><code class="language-sh">watch 'curl http://127.0.0.1:5000/scores/&lt;score_name&gt;/status_short'
+</code></pre>
+<h2 id="roadmap">Roadmap</h2>
+<p>Here are some planned improvements to Johann, in no particular order:</p>
+<ul>
+<li>add more documentation</li>
+<li>switch to <a href="https://github.com/samuelcolvin/pydantic">pydantic</a></li>
+<li>switch to <a href="https://github.com/tiangolo/fastapi">fastapi</a></li>
+<li>use <a href="https://github.com/python/mypy">mypy</a> and
+  <a href="https://github.com/pycqa/pylint">pylint</a></li>
+<li>add more tests</li>
+<li>add user authentication</li>
+<li>support kwargs in Measures</li>
+<li>Score-level variables; configurable at runtime</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../offline_docs/" class="btn btn-neutral float-right" title="Offline Documentation">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/johannsdg/johannsdg.github.io/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../offline_docs/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
