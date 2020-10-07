@@ -1,6 +1,6 @@
 site_name: Johann
 nav:
     - Home: index.md
-    - Johann: johann.md
+    - Johann: johann_docs.md
     - Offline Documentation: offline_docs.md
 theme: readthedocs
