@@ -7,4 +7,4 @@ TBD
 
 ## Projects
 
-* [Johann] (johann.md)
+* [Johann](johann.md)
