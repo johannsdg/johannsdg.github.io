@@ -138,6 +138,10 @@ With the Johann docker container running via `make dev` users can interact with 
 
 ![Johann_5](img/Johann_5.png)
 
+* The status page also contains the raw output of the tasks, in this case the `ls -la` command run on each container shown below. 
+
+![Johann_6](img/Johann_6.png)
+
 #### Command Line 
 * To view available scores
 ``` sh 
