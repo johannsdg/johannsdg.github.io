@@ -57,9 +57,10 @@ In the future, these could be VMs or other hosts as well.
 
 ### Lexicon
 
-* Score -> Scenario/script of Players performing measures in order
-* Player -> Machine/Docker container that runs measures
-* Measure -> Specific action/single unit of action in a score
+* Score -> Scenario/script of Players performing Measures in order
+* Player -> Machine/Docker container that runs Measures
+* Measure -> Collection of specific group of actions in a Score
+* Task -> Specific action/single unit of action in a Measure
 
 
 ### Example Score
